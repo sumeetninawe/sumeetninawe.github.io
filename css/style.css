@@ -22,7 +22,7 @@ p{
 .header img{
 	height: 200px;
 	float: left;
-	margin: 0 0 0 200px;
+	margin: 0 0 0 15%;
 	position: absolute;
 	//border-radius: 200px;
 }
@@ -42,7 +42,7 @@ p{
 
 .mainTitle p{
 	margin: 0 0 0 33%;
-	font-size: 50px;
+	font-size: 450%;
 	font-family: monospace;
 	line-height: 300%;
 	height: inherit;
