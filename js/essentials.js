@@ -6,5 +6,11 @@ $(document).ready(function(){
 		});
 		$(this).addClass('active');
 	});
-	
+	$('.getInTouch').hover(function(){
+		console.log('in');
+		$('.getInTouch p').text('sumeet.ninawe@gmail.com');
+	}, function(){
+		console.log('out');
+		$('.getInTouch p').text('Get In Touch');
+	});
 });

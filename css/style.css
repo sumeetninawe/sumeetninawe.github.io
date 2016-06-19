@@ -130,3 +130,70 @@ p{
 .titleContainer{
 	padding: 1%;
 }
+
+.getInTouch{
+	height: 30px;
+	width: auto;
+	float: right;
+	margin: 2% 20% 2% 0;
+	padding: 2%;
+	font-family: Geneva, Tahoma, Verdana, sans-serif;
+}
+
+.formContainer{
+	width: 80%;
+	margin-right: 10%;
+	margin-left: 10%;
+	text-align: center;
+}
+
+.formContainer input{
+	border: none;
+	border-bottom: 2px solid;
+	height: 30px;
+	width: 50%;
+}
+
+.formContainer input:focus{
+	border: none;
+	border-bottom: 2px solid red;
+	height: 30px;
+	width: 50%;
+	outline: none;
+}
+
+.formContainer #message{
+	height: 100px;
+	width: 50%;
+	border: none;
+	border-bottom: 2px solid;
+	font-family: Geneva, Tahoma, Verdana, sans-serif;
+}
+.formContainer #message:focus{
+	height: 100px;
+	width: 50%;
+	border: none;
+	border-bottom: 2px solid red;
+	outline: none;
+}
+
+.formContainer p{
+	font-family: Geneva, Tahoma, Verdana, sans-serif;
+	font-size: 120%;
+	margin-top: 3%;
+}
+
+.gitButton{
+	margin: 1px;
+}
+
+::-webkit-input-placeholder {
+   color: black;
+   opacity: 0.5;
+   font-family: Geneva, Tahoma, Verdana, sans-serif;
+}
+:-ms-input-placeholder {  
+   color: black; 
+   opacity: 0.5;
+   font-family: Geneva, Tahoma, Verdana, sans-serif;
+}
