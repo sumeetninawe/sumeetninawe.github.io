@@ -7,10 +7,13 @@ $(document).ready(function(){
 		$(this).addClass('active');
 	});
 	$('.getInTouch').hover(function(){
-		console.log('in');
 		$('.getInTouch p').text('sumeet.ninawe@gmail.com');
 	}, function(){
-		console.log('out');
 		$('.getInTouch p').text('Get In Touch');
+	});
+	$('.gitButton').hover(function(){
+		$('.gitButton').css("background-color", "#00b33c");
+	}, function(){
+		$('.gitButton').css("background-color", "#00e64d");
 	});
 });

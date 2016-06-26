@@ -185,6 +185,11 @@ p{
 
 .gitButton{
 	margin: 1px;
+	border-bottom: 0 !important;
+	background-color: #00e64d;
+	border-radius: 2px;
+	font-family: Geneva, Tahoma, Verdana, sans-serif;
+	font-size: 120%;
 }
 
 ::-webkit-input-placeholder {
