@@ -24,7 +24,7 @@ app.controller('getInTouchController', ['$scope', '$http', function($scope, $htt
 		gitMessage: ''
 	};
 	const askReq = {
-		url: 'https://sumeetninawe.github.io/ask/',
+		url: 'https://sumeetninawe.github.io/ask',
 		method: 'POST',
 		data: $scope.messageObject
 	};
