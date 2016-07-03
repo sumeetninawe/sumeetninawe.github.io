@@ -24,9 +24,12 @@ app.controller('getInTouchController', ['$scope', '$http', function($scope, $htt
 		gitMessage: ''
 	};
 	const askReq = {
-		url: 'https://sumeetninawe.github.io/ask',
-		method: 'POST',
-		data: $scope.messageObject
+		'url': 'https://sumeetninawe.github.io/ask',
+		'method': 'POST',
+		'dataType': 'jsonp',
+		'cache-control': 'no-cache',
+		'content-type': 'multipart/form-data; boundary=---011000010111000001101001',
+		'data': $scope.messageObject
 	};
 	$scope.ask = function(){
 		if($scope.messageObject.gitName == '' || $scope.messageObject.gitEmail == '' || $scope.messageObject.gitMessage == ''){
