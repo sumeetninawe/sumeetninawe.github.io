@@ -26,9 +26,12 @@ app.controller('getInTouchController', ['$scope', '$http', function($scope, $htt
 	const askReq = {
 		'url': 'https://sumeetninawe.github.io/ask',
 		'method': 'POST',
-		'dataType': 'jsonp',
+		'dataType': 'json',
 		'cache-control': 'no-cache',
 		'content-type': 'multipart/form-data; boundary=---011000010111000001101001',
+		'xhrFields': {
+			'withCredentials': true
+		},
 		'data': $scope.messageObject
 	};
 	$scope.ask = function(){
