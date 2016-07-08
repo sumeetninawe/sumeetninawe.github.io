@@ -5,20 +5,6 @@ app.controller('mainController', ['$scope', '$http', function($scope, $http){
 	$scope.getInTouch = 'Get In Touch';
 	$scope.nav = function(dest){
 		$scope.page = dest;
-		/*if(dest == 'echo.html'){
-			console.log('echoingggg');
-			const optReq = {
-				'url': 'https://warm-castle-48070.herokuapp.com/',
-				'method': 'GET',
-			};
-			$http(optReq)
-				.then(function(data){
-					console.log('message posted ' + JSON.stringify(data));
-				}, function(err){
-					console.log('error', err);
-				});
-
-		}*/
 	};
 }]);
 
@@ -68,8 +54,18 @@ app.controller('getInTouchController', ['$scope', '$http', function($scope, $htt
 					$scope.messageObject.gitName = '';
 					$scope.messageObject.gitEmail = '';
 					$scope.messageObject.gitMessage = '';
+					$scope.buttonValue = 'Message Sent!';
+					setTimeout(function(){
+						$scope.buttonValue = 'Ask!';
+						$scope.$apply();
+					}, 3000);
 					console.log('message posted');
 				}, function(err){
+					$scope.buttonValue = 'Oops, I didn\'t get it!';
+					setTimeout(function(){
+						$scope.buttonValue = 'Ask!';
+						$scope.$apply();
+					}, 3000);
 					console.log('error', err);
 				});
 		}

@@ -6,6 +6,13 @@ $(document).ready(function(){
 		});
 		$(this).addClass('active');
 	});
+	$('#whoami').click(function(){
+		$('.getInTouch').hover(function(){
+			$('.getInTouch p').text('sumeet.ninawe@gmail.com');
+		}, function(){
+			$('.getInTouch p').text('Get In Touch');
+		});
+	});
 	$('.getInTouch').hover(function(){
 		$('.getInTouch p').text('sumeet.ninawe@gmail.com');
 	}, function(){
