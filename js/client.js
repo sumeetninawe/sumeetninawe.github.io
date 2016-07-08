@@ -1,10 +1,24 @@
 var app = angular.module('app', []);
 
-app.controller('mainController', ['$scope', function($scope){
+app.controller('mainController', ['$scope', '$http', function($scope, $http){
 	$scope.page = 'home.html';
 	$scope.getInTouch = 'Get In Touch';
 	$scope.nav = function(dest){
 		$scope.page = dest;
+		/*if(dest == 'echo.html'){
+			console.log('echoingggg');
+			const optReq = {
+				'url': 'https://warm-castle-48070.herokuapp.com/',
+				'method': 'GET',
+			};
+			$http(optReq)
+				.then(function(data){
+					console.log('message posted ' + JSON.stringify(data));
+				}, function(err){
+					console.log('error', err);
+				});
+
+		}*/
 	};
 }]);
 
@@ -24,11 +38,12 @@ app.controller('getInTouchController', ['$scope', '$http', function($scope, $htt
 		gitMessage: ''
 	};
 	const askReq = {
-		'url': 'https://sumeetninawe.github.io/ask',
+		'url': 'https://warm-castle-48070.herokuapp.com/ask',
 		'method': 'POST',
 		'dataType': 'json',
 		'cache-control': 'no-cache',
 		'content-type': 'multipart/form-data; boundary=---011000010111000001101001',
+		'Upgrade-Insecure-Requests': 1,
 		'xhrFields': {
 			'withCredentials': true
 		},
