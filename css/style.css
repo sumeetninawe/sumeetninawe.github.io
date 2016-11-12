@@ -193,6 +193,15 @@ p{
 	font-size: 120%;
 }
 
+.pad{
+	display: block;
+	height: 50px;
+	width: 50px;
+	float: left;
+	margin: 10px;
+	background-color: red;
+}
+
 ::-webkit-input-placeholder {
    color: black;
    opacity: 0.5;

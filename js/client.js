@@ -3,12 +3,29 @@ var app = angular.module('app', []);
 app.controller('mainController', ['$scope', '$http', function($scope, $http){
 	$scope.page = 'home.html';
 	$scope.getInTouch = 'Get In Touch';
+	$scope.arrivalPin = {
+		"pin": '',
+	};
 	$scope.nav = function(dest){
 		$scope.page = dest;
 	};
 
+	$scope.addToPin = function(ch){
+		$scope.arrivalPin.pin = $scope.arrivalPin.pin + ch;
+	}
+
 	$scope.arrivalToggle = function(){
-		alert('ohho');
+		const arrivalCall = {
+			'url': 'https://warm-castle-48070.herokuapp.com/arrivalseq',
+			'method': 'POST',
+			'data': $scope.arrivalPin
+		};
+		$http(arrivalCall)
+			.then(function(data){
+				console.log('arrival flag ' + data );
+			}, function(err){
+				console.log('error', err);
+			});
 	};
 }]);
 

@@ -12,7 +12,12 @@
 </head>
 <body ng-app="app">
 	<div class="arrivalContainer" ng-controller="mainController">
-		<input type="button" name="ohho" value="ohho" ng-click="arrivalToggle()"></input>
+		<div class="pad" ng-model="a" ng-click="addToPin('a')">A</div>
+		<div class="pad" ng-model="b" ng-click="addToPin('b')">B</div>
+		<div class="pad" ng-model="c" ng-click="addToPin('c')">C</div>
+		<div class="pad" ng-model="d" ng-click="addToPin('d')">D</div><br></br><br></br>
+		<input type="text" name="" ng-model="arrivalPin.pin">
+		<input type="button" name="ohho" value="ohho" ng-click="arrivalToggle(arrivalPin.pin)"></input>
 	</div>
 </body>
 </html>
