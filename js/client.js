@@ -3,6 +3,7 @@ var app = angular.module('app', []);
 app.controller('mainController', ['$scope', '$http', function($scope, $http){
 	$scope.page = 'home.html';
 	$scope.getInTouch = 'Get In Touch';
+	$scope.arrivalButton = 'Send';
 	$scope.arrivalPin = {
 		"pin": '',
 	};
@@ -26,6 +27,7 @@ app.controller('mainController', ['$scope', '$http', function($scope, $http){
 			}, function(err){
 				console.log('error', err);
 			});
+		$scope.arrivalPin.pin = '';
 	};
 }]);
 
