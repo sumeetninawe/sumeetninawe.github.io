@@ -6,6 +6,10 @@ app.controller('mainController', ['$scope', '$http', function($scope, $http){
 	$scope.nav = function(dest){
 		$scope.page = dest;
 	};
+
+	$scope.arrivalToggle = function(){
+		alert('ohho');
+	};
 }]);
 
 app.controller('headController', ['$scope', function($scope){
