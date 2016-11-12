@@ -27,7 +27,6 @@ app.controller('mainController', ['$scope', '$http', function($scope, $http){
 			}, function(err){
 				console.log('error', err);
 			});
-		$scope.arrivalPin.pin = '';
 	};
 }]);
 
