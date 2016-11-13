@@ -47,6 +47,7 @@ app.controller('getInTouchController', ['$scope', '$http', function($scope, $htt
 	};
 	const askReq = {
 		'url': 'https://warm-castle-48070.herokuapp.com/ask',
+		//'url': 'http://localhost:5000/ask',
 		'method': 'POST',
 		'dataType': 'json',
 		'cache-control': 'no-cache',
