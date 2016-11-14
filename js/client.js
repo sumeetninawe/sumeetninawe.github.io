@@ -7,6 +7,24 @@ app.controller('mainController', ['$scope', '$http', function($scope, $http){
 	$scope.arrivalPin = {
 		"pin": '',
 	};
+	$scope.stats;
+
+	$scope.statInit = function(){
+		const getStats = {
+			'url': 'https://warm-castle-48070.herokuapp.com/getstats',
+			'method': 'POST',
+			'dataType': 'application/json',
+			'data': {}
+		};
+		$http(getStats)
+		.then(function(data){
+			console.log(data.data);
+			$scope.stats = data.data;
+		}, function(err){
+			console.log(err);
+		});
+	};
+
 	$scope.nav = function(dest){
 		$scope.page = dest;
 	};

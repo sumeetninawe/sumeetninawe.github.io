@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <script src="./js/angular1.5.5.js" charset="UTF-8"></script>
+	<script src="./js/jquery2.2.2.min.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="./js/client.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="./js/essentials.js" charset="UTF-8"></script>
+	<style type="text/css" media="screen">
+		table, th, td{border: 1px solid;}
+	</style>
+</head>
+<body>
+	<div class="statContainer" ng-controller="mainController">
+	<div data-ng-init="statInit()"></div>
+		<table style="border: 1px solid">
+			<caption>site stats</caption>
+			<thead>
+				<tr>
+					<th>IP</th>
+				
+					<th>URL</th>
+				
+					<th>HOST</th>
+				
+					<th>Country</th>
+				
+					<th>Country Code</th>
+				
+					<th>Region</th>
+				
+					<th>Region Name</th>
+				
+					<th>City</th>
+				
+					<th>ISP</th>
+				
+					<th>As</th>
+				
+					<th>Query</th>
+				
+					<th>Message</th>
+				
+					<th>Status</th>
+				
+					<th>Organization</th>
+				
+					<th>Protocol</th>
+				
+					<th>Method</th>
+				
+					<th>Path</th>
+				
+					<th>Zip</th>
+				
+					<th>Timezone</th>
+				
+					<th>Hostname</th>
+				
+					<th>Postal</th>
+				
+					<th>Latitude</th>
+				
+					<th>Longitude</th>
+				
+					<th>TimeStamp</th>
+				</tr>
+			</thead>
+			<tbody ng-repeat="x in stats">
+				<tr>
+					<td>{{x.ip}}</td>
+				
+					<td>{{x.url}}</td>
+				
+					<td>{{x.host}}</td>
+				
+					<td>{{x.country}}</td>
+				
+					<td>{{x.countryCode}}</td>
+				
+					<td>{{x.region}}</td>
+				
+					<td>{{x.regionName}}</td>
+				
+					<td>{{x.city}}</td>
+				
+					<td>{{x.isp}}</td>
+				
+					<td>{{x.as}}</td>
+				
+					<td>{{x.query}}</td>
+				
+					<td>{{x.message}}</td>
+				
+					<td>{{x.status}}</td>
+				
+					<td>{{x.org}}</td>
+				
+					<td>{{x.protocol}}</td>
+				
+					<td>{{x.method}}</td>
+				
+					<td>{{x.path}}</td>
+				
+					<td>{{x.zip}}</td>
+				
+					<td>{{x.timezone}}</td>
+				
+					<td>{{x.hostname}}</td>
+				
+					<td>{{x.postal}}</td>
+				
+					<td>{{x.lat}}</td>
+				
+					<td>{{x.lon}}</td>
+				
+					<td>{{x.timestamp}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
