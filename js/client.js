@@ -13,7 +13,22 @@ app.controller('mainController', ['$scope', '$http', function($scope, $http){
 
 	$scope.addToPin = function(ch){
 		$scope.arrivalPin.pin = $scope.arrivalPin.pin + ch;
-	}
+	};
+
+	$scope.init = function(){
+		const arrivalCall = {
+			'url': 'https://warm-castle-48070.herokuapp.com/',
+			//'url': 'http://localhost:5000/',
+			'method': 'GET',
+			'data':''
+		};
+		$http(arrivalCall)
+			.then(function(data){
+				//console.log('init ' + data );
+			}, function(err){
+				console.log('error', err);
+			});
+	};
 
 	$scope.arrivalToggle = function(){
 		const arrivalCall = {
