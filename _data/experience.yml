@@ -1,19 +1,13 @@
 # Jobs
-# VP of Global Communications
-- company: Springfield International Human Rights Outreach
-  position: VP of Global Communications
-  duration: Oct, 2013 &mdash; Present
-  summary: Write about your core competencies in one or two sentences describing your position. If you held the position for a long time, it could be a longer section, including a couple bullet points	<ul class="resume-item-list"><li>A project you are proud of</li><li>Another awesome project</li><li>or a team or department you worked with</li></ul>
+# Employer experience
+- company: Let's Do Tech
+  position: Founder
+  duration: Jul, 2022 &mdash; Present
+  summary: <ul class="resume-item-list"><li>Launched and managed a bootstrapped startup, focusing on technical consulting related to cloud architecture, DevSecOps, and platform engineering.</li><li>Authored in-depth and well-received technical blogs and ebooks, establishing a strong online presence within the industry.</li><li>Currently in the process of building a micro-SaaS product from the ground up, handling all aspects of development, deployment, and customer engagement.</li><li>Implemented cost-effective solutions and optimized resource utilization to achieve operational efficiency in the absence of external funding.</li></ul>
 
-# Director of Digital Stratgy
-- company: United Nations Human Rights Council
-  position: Director of Digital Strategy
-  duration:  Jun, 2010 &mdash; Sept, 2013
-  summary: If your stint was shorter, feel free to be brief and just call out the most meaningful points of your role. Be concise, and be meaninful. The person reading just needs enough to want to talk to you more about your experience.
+# Employee experience
+- company: Multiple Orgs.
+  position: Sr. Product Architect
+  duration:  Oct, 2010 &mdash; Present
+  summary: <ul class="resume-item-list"><li>Led the implementation and management of DevSecOps practices on Azure DevOps platform, integrating security controls into CI/CD pipelines.</li><li>Collaborated with development and operations teams to ensure the adoption of secure coding practices and compliance with industry standards like OWASP.</li><li>Conducted regular security assessments using Qualys and performed vulnerability scanning to identify and address potential security risks in the infrastructure and applications.</li><li>Automated infrastructure provisioning, deployment, and vulnerability assessments, reducing time-to-detection by 70% and enabling faster remediation.</li><li>Implemented and managed container security solutions using Aqua scan, ensuring secure deployment of applications using Docker and Kubernetes.</li><li>Developed microservices in Golang, provided application architectural inputs, and created design documents.</li><li>Automated deployment processes using tools such as Ansible and Terraform, thus resulting in better deployment efficiency on AWS.</li><li>Implemented, managed, and automated log management and monitoring solutions to detect and respond to security incidents in real-time by developing custom client in NodeJS.</li><li>Developed microservices to auto-detect creation and destruction of infrastructure to update the configuration management database (CMDB).</li></ul>
 
-
-# Communications Coordinator
-- company: Springfield Women & Children's Center
-  position: Communications Coordinator
-  duration:   Jun, 2008  &mdash; May, 2010
-  summary: Led communication efforts across digital and traditional media channels for marketing and public relations, internal communication strategies, and coordinated support programs for the recipients of the center's services.
