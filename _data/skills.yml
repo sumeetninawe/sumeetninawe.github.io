@@ -1,19 +1,19 @@
 # Skills
 
 - skill: Cloud Computing
-  description: AWS, Azure, Google Cloud
+  description: AWS, Azure, Google Cloud, Serverless
 
 - skill: Automation
   description: Terraform, Ansible, Pulumi
 
 - skill: DevOps
-  description: CI/CD, Jenkins, GitLab, Docker, Kubernetes
+  description: CI/CD, Github, Jenkins, GitLab, Docker, Kubernetes
 
 - skill: Security
-  description: SecOps, Threat Modeling, Security Automation, Compliance
+  description: SecOps, Threat Modeling, Compliance
 
-- skill: Programming Languages
-  description: Python, Golang, JavaScript
+- skill: Languages
+  description: Golang, JavaScript, Python, YAML, JSON
 
 - skill: Database Systems
   description: MySQL, MongoDB, DynamoDB
